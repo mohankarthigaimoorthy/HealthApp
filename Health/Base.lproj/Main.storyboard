@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Health" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="jQL-Oe-YLX">
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="healthCell" rowHeight="211" id="e7T-zY-CA0" customClass="HealthTableViewCell" customModule="Health" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="211"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e7T-zY-CA0" id="iuh-tz-8zF">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="211"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="value 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFA-kI-QZu">
+                                                    <rect key="frame" x="20" y="48" width="78" height="92"/>
+                                                    <color key="backgroundColor" systemColor="labelColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" systemColor="systemGreenColor"/>
+                                                    <color key="highlightedColor" systemColor="systemGreenColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="data 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R05-6e-hGf">
+                                                    <rect key="frame" x="118" y="11" width="90" height="82"/>
+                                                    <color key="tintColor" systemColor="systemIndigoColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" systemColor="systemOrangeColor"/>
+                                                    <color key="highlightedColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWd-Pf-ZMi">
+                                                    <rect key="frame" x="277" y="36" width="117" height="40"/>
+                                                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" systemColor="systemYellowColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="steps count" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FgF-8x-cft">
+                                                    <rect key="frame" x="118" y="135" width="109" height="40"/>
+                                                    <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" systemColor="systemGray6Color"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="tintColor"/>
+                                            <color key="tintColor" systemColor="tintColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="iFA-kI-QZu" secondAttribute="trailing" constant="296" id="2cD-Xd-1Q9"/>
+                                                <constraint firstItem="FgF-8x-cft" firstAttribute="top" secondItem="R05-6e-hGf" secondAttribute="bottom" constant="42" id="4BM-W2-BF8"/>
+                                                <constraint firstItem="iFA-kI-QZu" firstAttribute="leading" secondItem="iuh-tz-8zF" secondAttribute="leadingMargin" id="7fN-2T-1A2"/>
+                                                <constraint firstItem="QWd-Pf-ZMi" firstAttribute="leading" secondItem="R05-6e-hGf" secondAttribute="trailing" constant="69" id="914-Rh-qIc"/>
+                                                <constraint firstItem="R05-6e-hGf" firstAttribute="top" secondItem="iuh-tz-8zF" secondAttribute="topMargin" id="ChG-yU-nZT"/>
+                                                <constraint firstItem="iFA-kI-QZu" firstAttribute="top" secondItem="iuh-tz-8zF" secondAttribute="topMargin" constant="37" id="FSd-uw-ENi"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="FgF-8x-cft" secondAttribute="trailing" constant="167" id="PLC-uD-0Jw"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="iFA-kI-QZu" secondAttribute="bottom" constant="60" id="UIA-cJ-7D3"/>
+                                                <constraint firstItem="R05-6e-hGf" firstAttribute="leading" secondItem="iFA-kI-QZu" secondAttribute="trailing" constant="20" id="gXb-9e-fGv"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="QWd-Pf-ZMi" secondAttribute="bottom" constant="124" id="iRS-t8-qLm"/>
+                                                <constraint firstItem="QWd-Pf-ZMi" firstAttribute="top" secondItem="iuh-tz-8zF" secondAttribute="topMargin" constant="25" id="jgn-U2-7Jm"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="FgF-8x-cft" secondAttribute="bottom" constant="25" id="lvi-Ga-d95"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="R05-6e-hGf" secondAttribute="trailing" constant="186" id="mjj-Wj-HIO"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="R05-6e-hGf" secondAttribute="bottom" constant="107" id="o9M-4j-5Rz"/>
+                                                <constraint firstItem="FgF-8x-cft" firstAttribute="leading" secondItem="iFA-kI-QZu" secondAttribute="trailing" constant="20" id="oiH-eB-nEY"/>
+                                                <constraint firstItem="QWd-Pf-ZMi" firstAttribute="trailing" secondItem="iuh-tz-8zF" secondAttribute="trailingMargin" id="pc6-GM-pOJ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="calorie" destination="R05-6e-hGf" id="sPe-te-H0G"/>
+                                            <outlet property="counts" destination="QWd-Pf-ZMi" id="Vpf-QS-0RI"/>
+                                            <outlet property="icon" destination="iFA-kI-QZu" id="QDd-rv-UWh"/>
+                                            <outlet property="steps" destination="FgF-8x-cft" id="rwo-FG-GF2"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="a27-Dl-xcP"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="BEE-Ic-oJk"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jQL-Oe-YLX" secondAttribute="trailing" id="Jlq-v6-bTp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jQL-Oe-YLX" secondAttribute="bottom" id="Rj4-4K-wFq"/>
+                            <constraint firstItem="jQL-Oe-YLX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gtT-Ti-YUo"/>
+                            <constraint firstItem="jQL-Oe-YLX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="oWI-0h-cBw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="healthTableView" destination="jQL-Oe-YLX" id="IEA-Yh-Fra"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-28.985507246376812" y="3.3482142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
